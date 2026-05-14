@@ -57,9 +57,6 @@ export class VidNestProvider extends BaseProvider {
         { path: 'klikxxi', query: '' }
     ];
 
-    /**
-     * ✅ ONLY supported servers (typed)
-     */
     private readonly handlers: {
         [K in SupportedServer]: {
             parse: (data: string) => ServerMap[K];
@@ -71,10 +68,10 @@ export class VidNestProvider extends BaseProvider {
             parse: (d) => decrypt<klikxxiResponse>(d),
             mapSources: (root) =>
                 root.sources.map((s) => ({
-                    url: this.createProxyUrl(s.url, this.HEADERS),
+                    url: this.createProxyUrl(s.url),
                     type: this.inferSourceType(s.type, s.url),
                     quality: s.quality,
-                    audioTracks: [],
+                    audioTracks: [{ language: 'English', label: 'eng' }],
                     provider: { id: this.id, name: this.name }
                 })),
             mapSubtitles: () => []
@@ -84,7 +81,7 @@ export class VidNestProvider extends BaseProvider {
             parse: (d) => decrypt<allmoviesResponse>(d),
             mapSources: (root) =>
                 root.streams.map((s) => ({
-                    url: this.createProxyUrl(s.url, s.headers),
+                    url: this.createProxyUrl(s.url),
                     type: this.inferSourceType(s.type, s.url),
                     quality: 'Auto',
                     audioTracks: [{ language: s.language, label: s.language }],
@@ -116,7 +113,7 @@ export class VidNestProvider extends BaseProvider {
             parse: (d) => decrypt<hollymoviehdResponse>(d),
             mapSources: (root) =>
                 root.sources.map((s) => ({
-                    url: this.createProxyUrl(s.file, this.HEADERS),
+                    url: this.createProxyUrl(s.file),
                     type: this.inferSourceType(s.type, s.file),
                     quality: s.label,
                     audioTracks: [{ language: 'English', label: 'eng' }],
@@ -154,7 +151,7 @@ export class VidNestProvider extends BaseProvider {
             parse: (d) => decrypt<deltaResponse>(d),
             mapSources: (root) =>
                 root.streams.map((s) => ({
-                    url: this.createProxyUrl(s.url, this.HEADERS),
+                    url: this.createProxyUrl(s.url),
                     type: this.inferSourceType(s.type, s.url),
                     quality: 'Auto',
                     audioTracks: [
@@ -169,7 +166,7 @@ export class VidNestProvider extends BaseProvider {
             parse: (d) => decrypt<purstreamResponse>(d),
             mapSources: (root) =>
                 root.sources.map((s) => ({
-                    url: this.createProxyUrl(s.url, this.HEADERS),
+                    url: this.createProxyUrl(s.url),
                     type: this.inferSourceType(s.format, s.url),
                     quality: s.name,
                     audioTracks: [{ language: 'French', label: 'fr' }],

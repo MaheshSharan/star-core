@@ -3,12 +3,8 @@ import type { PeachifyApiResponse } from './peachify.types.js';
 
 const { subtle } = webcrypto;
 
-/**
- * AES-GCM decryption key used by Peachify for encrypted API responses.
- * This key is embedded in their frontend bundle.
- */
 const ENCRYPTION_KEY_HEX =
-    'd8f2a1b5e9c470814f6b2c3a5d8e7f9c1a2b3c4d5e3f7a8b9c0d1e2f3a4d5c6d';
+    'YThmMmExYjVlOWM0NzA4MTRmNmIyYzNhNWQ4ZTdmOWMxYTJiM2M0ZDVlM2Y3YThiOGNhZDFlMmQwYTRkNWM1YQ==';
 
 /**
  * Peachify payload format:
@@ -59,7 +55,7 @@ function hexToBytes(hex: string): Uint8Array {
 async function importDecryptionKey(): Promise<webcrypto.CryptoKey> {
     return subtle.importKey(
         'raw',
-        hexToBytes(ENCRYPTION_KEY_HEX),
+        hexToBytes(Buffer.from(ENCRYPTION_KEY_HEX, "base64").toString()),
         { name: 'AES-GCM' },
         false,
         ['decrypt']
@@ -119,11 +115,6 @@ export default async function decryptPayload(
 
         return JSON.parse(decryptedJson) as PeachifyApiResponse;
     } catch (error) {
-        console.error(
-            'Failed to decrypt Peachify payload. Payload may be invalid or tampered with.',
-            error
-        );
-
         return null;
     }
 }
