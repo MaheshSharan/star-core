@@ -1,5 +1,5 @@
 name: New Provider Request
-description: Request a new streaming provider to be added to CinePro Core
+description: Request a new streaming provider to be added to StarLight Core
 title: 'Provider Request: '
 labels: ['🌟enhancement', '📀provider', '🔺needs-triage']
 
@@ -7,13 +7,13 @@ body:
     - type: markdown
       attributes:
           value: |-
-              Hey There! 👋 Thanks for suggesting a new provider for CinePro Core! 🚀
+              Hey There! 👋 Thanks for suggesting a new provider for StarLight Core! 🚀
               Before submitting your request, please ensure the provider is not already supported.
 
               Please fill out this template to help us understand your request better.
 
               > [!NOTE]
-              > Before submitting, please check if your provider request is already suggested in the [existing issues](https://github.com/cinepro-org/core/issues).
+              > Before submitting, please check if your provider request is already suggested in the [existing issues](https://github.com/MaheshSharan/star-core/issues).
 
     - type: checkboxes
       attributes:
@@ -22,7 +22,7 @@ body:
           options:
               - label: I have checked the existing issues and this is not a duplicate
                 required: true
-              - label: I have read the [README.md](https://github.com/cinepro-org/core/blob/main/README.md) and ensured that this provider is not already supported
+              - label: I have read the [README.md](https://github.com/MaheshSharan/star-core/blob/main/README.md) and ensured that this provider is not already supported
                 required: true
               - label: I have reviewed the [OMSS Framework documentation](https://github.com/omss-spec/framework) to understand provider implementation
                 required: true
@@ -64,7 +64,7 @@ body:
       attributes:
           label: Provider Description
           description: Briefly describe the provider and what streaming sources it offers.
-          placeholder: 'Describe the provider, its quality, reliability, and why it should be added to CinePro Core.'
+          placeholder: 'Describe the provider, its quality, reliability, and why it should be added to StarLight Core.'
       validations:
           required: true
 

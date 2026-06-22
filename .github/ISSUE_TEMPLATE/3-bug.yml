@@ -1,5 +1,5 @@
 name: Bug Report
-description: Report a bug or issue with CinePro Core
+description: Report a bug or issue with StarLight Core
 title: 'Bug: '
 labels: ['🐛bug', '🔺needs-triage']
 
@@ -7,13 +7,13 @@ body:
     - type: markdown
       attributes:
           value: |-
-              Hey There! 👋 Thanks for reporting a bug to help make CinePro Core better! 🎉
-              Before you submit your bug report, please ensure that you have the latest version of CinePro Core installed.
+              Hey There! 👋 Thanks for reporting a bug to help make StarLight Core better! 🎉
+              Before you submit your bug report, please ensure that you have the latest version of StarLight Core installed.
 
               Please fill out this template to help us understand and fix the issue you're experiencing.
 
               > [!NOTE]
-              > Before reporting, please check if your issue is already reported in the [existing issues](https://github.com/cinepro-org/core/issues).
+              > Before reporting, please check if your issue is already reported in the [existing issues](https://github.com/MaheshSharan/star-core/issues).
 
     - type: checkboxes
       attributes:
@@ -22,9 +22,9 @@ body:
           options:
               - label: I have checked the existing issues and this is not a duplicate
                 required: true
-              - label: I have read the [README.md](https://github.com/cinepro-org/core/blob/main/README.md) and followed the installation instructions
+              - label: I have read the [README.md](https://github.com/MaheshSharan/star-core/blob/main/README.md) and followed the installation instructions
                 required: true
-              - label: I am using the latest version of CinePro Core
+              - label: I am using the latest version of StarLight Core
                 required: true
               - label: I have configured my `.env` file correctly (especially TMDB_API_KEY)
                 required: true
@@ -42,7 +42,7 @@ body:
           placeholder: |-
               - Operating System: (e.g., Windows 11, macOS 14, Ubuntu 22.04)
               - Node.js version: (run `node --version`)
-              - CinePro Core version: (from package.json)
+              - StarLight Core version: (from package.json)
               - @omss/framework version: (from package.json)
               - Cache Type: (memory/redis)
               - Using Proxy/VPN: (yes/no)
@@ -85,7 +85,7 @@ body:
       attributes:
           label: Expected Behavior
           description: What did you expect to happen?
-          placeholder: 'Describe what you expected to happen when using CinePro Core...'
+          placeholder: 'Describe what you expected to happen when using StarLight Core...'
       validations:
           required: true
 

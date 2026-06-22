@@ -1,6 +1,6 @@
 /*
  * Credit where credit is due. Decrypt logic was taken from: https://github.com/vyla-entertainment/stream-api/blob/main/sources/cinezo.js
- * with permission: https://github.com/orgs/cinepro-org/discussions/1#discussioncomment-16937840
+ * with permission: https://github.com/MaheshSharan/star-core/discussions/1#discussioncomment-16937840
  */
 const L1_KEY = 'U24wMHBEMGcjTDFfWDBSX000c3QzckszeSEyMDI2c2V4';
 const L1_SALT = 'eEs5IW1SMkBwTDUjblE4c2V4';

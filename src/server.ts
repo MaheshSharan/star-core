@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 
 async function main() {
     const server = new OMSSServer({
-        name: 'CinePro',
+        name: 'StarLight',
         version: '1.0.0',
 
         // Network
@@ -56,7 +56,7 @@ async function main() {
         stremio: {
             // exposes a stremio addon on /stremio/manifest.json
             enableNativeAddon: process.env.STREMIO_ADDON === 'true',
-            // you can your own custom stremio addons as sources into cinepro.
+            // you can your own custom stremio addons as sources into starlight.
             stremioAddons: []
             /*
             stremioAddons: [
@@ -85,19 +85,16 @@ async function main() {
         process.env.PUBLIC_URL ??
         `http://${process.env.HOST ?? 'localhost'}:${process.env.PORT ?? 3000}`;
 
-    const uiUrl = `https://ui.cinepro.cc/?omssurl=${encodeURIComponent(publicUrl)}`;
+    const uiUrl = `${process.env.PUBLIC_URL ?? `http://${process.env.HOST ?? 'localhost'}:${process.env.PORT ?? 3000}`}/ui`;
 
-    const title = '🚀 CinePro/ui is in public testing';
+    const title = '🚀 StarLight is ready!';
     const contrib =
         '🤝 We are looking for contributors to improve and develop!';
-    const repo = 'Contribute: https://github.com/cinepro-org/ui';
+    const repo = 'Contribute: https://github.com/MaheshSharan/star-core';
     const tryIt = `🌐 Try it out: ${uiUrl} !`;
-    const note =
-        'You will need to give the website "access to local applications" that it works.';
 
-    const lines = [title, '', repo, '', contrib, '', tryIt, '', note];
+    const lines = [title, '', repo, '', contrib, '', tryIt];
 
-    // compute box width based on longest line
     const width = Math.max(...lines.map((l) => l.length)) + 2;
 
     const borderTop = '╭' + '─'.repeat(width) + '╮';
@@ -106,8 +103,6 @@ async function main() {
     const pad = (line: string) => '│ ' + line.padEnd(width - 2, ' ') + ' │';
 
     console.log(`
-================== CINEPRO BETA ANNOUNCEMENT ==================
-
 ${borderTop}
 ${lines.map(pad).join('\n')}
 ${borderBottom}

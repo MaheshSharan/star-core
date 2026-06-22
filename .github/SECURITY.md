@@ -2,14 +2,14 @@
 
 ## Overview
 
-CinePro Core is built on top of the [@omss/framework](https://github.com/omss-spec/framework), which handles the core backend logic, routing, and security features. This repository primarily contains provider implementations and configuration.
+StarLight Core is built on top of the [@omss/framework](https://github.com/omss-spec/framework), which handles the core backend logic, routing, and security features. This repository primarily contains provider implementations and configuration.
 
 > [!IMPORTANT]
 > Security vulnerabilities should be reported to the appropriate project based on where the issue originates.
 
 ## Supported Versions
 
-We support the latest version of CinePro Core with security updates.
+We support the latest version of StarLight Core with security updates.
 
 | Version | Supported          |
 | ------- | ------------------ |
@@ -45,17 +45,17 @@ If the vulnerability is in:
 - **Node.js**: [Report to Node.js Security Team](https://nodejs.org/en/security/)
 - **Other dependencies**: Check the respective project's security policy
 
-#### 3. CinePro Core Specific Vulnerabilities
+#### 3. StarLight Core Specific Vulnerabilities
 
-Report to CinePro Core if the vulnerability is specific to:
+Report to StarLight Core if the vulnerability is specific to:
 
 - Provider implementations in `src/providers/`
 - Custom configuration or environment handling
-- CinePro-specific code not part of the OMSS framework
+- StarLight-specific code not part of the OMSS framework
 
-**→ Report via GitHub Security Advisories**: [Create a Security Advisory](https://github.com/cinepro-org/core/security/advisories/new)
+**→ Report via GitHub Security Advisories**: [Create a Security Advisory](https://github.com/MaheshSharan/star-core/security/advisories/new)
 
-Alternatively, you can email security concerns directly to security@cinepro.cc
+Alternatively, you can email security concerns directly to https://github.com/MaheshSharan/star-core/issues
 
 ### What to Include in Your Report
 
@@ -68,14 +68,14 @@ When reporting a vulnerability, please include:
 5. **Proof of Concept**: Code or requests demonstrating the vulnerability
 6. **Suggested Fix**: If you have ideas on how to fix it (optional)
 7. **Environment Details**:
-    - CinePro Core version
+    - StarLight Core version
     - @omss/framework version
     - Node.js version
     - Operating system
 
 ### Response Timeline
 
-For vulnerabilities reported to CinePro Core:
+For vulnerabilities reported to StarLight Core:
 
 - **Initial Response**: Within 48 hours
 - **Triage**: Within 1 week
@@ -84,7 +84,7 @@ For vulnerabilities reported to CinePro Core:
 
 ## Security Best Practices
 
-When using CinePro Core:
+When using StarLight Core:
 
 ### 1. Keep Dependencies Updated
 
@@ -132,7 +132,7 @@ When developing providers:
 
 ### Personal Use Only
 
-CinePro Core is designed for **personal and home use**. If you're exposing it publicly:
+StarLight Core is designed for **personal and home use**. If you're exposing it publicly:
 
 - Implement authentication/authorization
 - Use rate limiting to prevent abuse
@@ -160,7 +160,7 @@ Our dependencies include:
 }
 ```
 
-More dependencies could be added to cinepro-core. Please refer to `package.json` for the latest list.
+More dependencies could be added to starlight-core. Please refer to `package.json` for the latest list.
 
 Underlying framework dependencies (managed by @omss/framework):
 
@@ -190,14 +190,14 @@ We rely on:
 
 If you're unsure whether something is a security issue or where to report it:
 
-1. Check if it's related to the OMSS framework or CinePro-specific code
-2. Open a [discussion](https://github.com/orgs/cinepro-org/discussions) (for non-sensitive questions)
+1. Check if it's related to the OMSS framework or StarLight-specific code
+2. Open a [discussion](https://github.com/MaheshSharan/star-core/discussions) (for non-sensitive questions)
 3. Contact maintainers privately via GitHub Security Advisories
 
 ## Legal
 
-CinePro Core is provided "as is" without warranty. See the [PolyForm Noncommercial 1.0 License](../LICENSE) for details.
+StarLight Core is provided "as is" without warranty. See the [PolyForm Noncommercial 1.0 License](../LICENSE) for details.
 
 ---
 
-**Thank you for helping keep CinePro Core and its users safe! 🔒**
+**Thank you for helping keep StarLight Core and its users safe! 🔒**

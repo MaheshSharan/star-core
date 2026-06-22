@@ -243,7 +243,7 @@ export class VidNestProvider extends BaseProvider {
                 diagnostics.push({
                     code: 'PARTIAL_SCRAPE',
                     field: '',
-                    message: `${this.name}: ${server.path} returned sources, but we don't have a handler for it yet (check for updates: https://github.com/cinepro-org/core).`,
+                    message: `${this.name}: ${server.path} returned sources, but we don't have a handler for it yet (check for updates: https://github.com/MaheshSharan/star-core).`,
                     severity: 'warning'
                 });
                 return;

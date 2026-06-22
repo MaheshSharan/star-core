@@ -10,7 +10,7 @@ env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
   IMAGE_DESCRIPTION: >
-    CinePro Core is the central scraping and streaming engine of the CinePro
+    StarLight Core is the central scraping and streaming engine of the StarLight
     ecosystem. It exposes an OMSS-compliant HTTP API for resolving movie and TV
     show streams from multiple providers.
 
@@ -68,24 +68,24 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build test image
-        run: docker buildx build --load -t cinepro-core:test .
+        run: docker buildx build --load -t starlight-core:test .
 
       - name: Test Docker image
         run: |
-          docker run -d --name cinepro-core-test \
+          docker run -d --name starlight-core-test \
             -p 3000:3000 \
             -e NODE_ENV=production \
             -e HOST=0.0.0.0 \
             -e PORT=3000 \
             -e CACHE_TYPE=memory \
             -e TMDB_API_KEY=dummy-ci-key \
-            cinepro-core:test
+starlight-core:test
           sleep 10
-          docker logs cinepro-core-test
+          docker logs starlight-core-test
           curl -sf http://localhost:3000 || true
       - name: Cleanup test container
         if: always()
-        run: docker rm -f cinepro-core-test || true
+        run: docker rm -f starlight-core-test || true
 
       - name: Build and push Docker image (amd64)
         id: build-push

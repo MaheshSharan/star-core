@@ -1,5 +1,5 @@
 name: Feature Request
-description: Suggest a new feature or enhancement for CinePro Core
+description: Suggest a new feature or enhancement for StarLight Core
 title: 'Feat: '
 labels: ['🌟enhancement', '🔺needs-triage']
 
@@ -7,16 +7,16 @@ body:
     - type: markdown
       attributes:
           value: |-
-              Hey There! 👋 Thanks for suggesting a feature to make CinePro Core better! 🚀
+              Hey There! 👋 Thanks for suggesting a feature to make StarLight Core better! 🚀
               Before submitting your feature request, please ensure it hasn't been suggested before.
 
               Please fill out this template to help us understand your suggestion better.
 
               > [!NOTE]
-              > Before submitting, please check if your feature request is already suggested in the [existing issues](https://github.com/cinepro-org/core/issues).
+              > Before submitting, please check if your feature request is already suggested in the [existing issues](https://github.com/MaheshSharan/star-core/issues).
 
               > [!IMPORTANT]
-              > Cinepro Core is based on the @omss/framework, so features that align with the OMSS specification or the OMSS framework are to be opened in the [OMSS Framework repository](https://github.com/omss-spec/framework/issues/new) or [OMSS Specification repository](https://github.com/omss-spec/spec/issues/new), not here. Please ensure your feature request is relevant to **CinePro Core** and not already covered by the OMSS specification or framework.
+              > Cinepro Core is based on the @omss/framework, so features that align with the OMSS specification or the OMSS framework are to be opened in the [OMSS Framework repository](https://github.com/omss-spec/framework/issues/new) or [OMSS Specification repository](https://github.com/omss-spec/spec/issues/new), not here. Please ensure your feature request is relevant to **StarLight Core** and not already covered by the OMSS specification or framework.
 
     - type: checkboxes
       attributes:
@@ -25,11 +25,11 @@ body:
           options:
               - label: I have checked the existing issues and this is not a duplicate
                 required: true
-              - label: I have read the [README.md](https://github.com/cinepro-org/core/blob/main/README.md) to ensure this feature doesn't already exist
+              - label: I have read the [README.md](https://github.com/MaheshSharan/star-core/blob/main/README.md) to ensure this feature doesn't already exist
                 required: true
               - label: This feature aligns with the OMSS specification or improves the core backend
                 required: true
-              - label: This feature would benefit the majority of CinePro Core users
+              - label: This feature would benefit the majority of StarLight Core users
                 required: true
               - label: I have considered the technical implications of this feature
                 required: true
@@ -54,12 +54,12 @@ body:
     - type: textarea
       attributes:
           label: Feature Description
-          description: Describe the feature you'd like to see in CinePro Core
+          description: Describe the feature you'd like to see in StarLight Core
           placeholder: |-
               Provide a clear and detailed description of what you want to happen.
 
               **Problem:** What problem does this feature solve?
-              **Solution:** How would this feature improve CinePro Core?
+              **Solution:** How would this feature improve StarLight Core?
       validations:
           required: true
 
@@ -91,7 +91,7 @@ body:
     - type: checkboxes
       attributes:
           label: Confirmation
-          description: 'Are you sure that this feature request is relevant to CinePro Core and not to be opened in the OMSS Framework or OMSS Specification repositories?'
+          description: 'Are you sure that this feature request is relevant to StarLight Core and not to be opened in the OMSS Framework or OMSS Specification repositories?'
           options:
-              - label: Yes, I confirm this feature request is relevant to CinePro Core
+              - label: Yes, I confirm this feature request is relevant to StarLight Core
                 required: true

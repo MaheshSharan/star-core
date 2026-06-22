@@ -1,5 +1,5 @@
 name: Question / Discussion
-description: Ask a question or start a discussion about CinePro Core
+description: Ask a question or start a discussion about StarLight Core
 title: 'Question: '
 labels: ['❓question', '💬discussion']
 
@@ -7,23 +7,23 @@ body:
     - type: markdown
       attributes:
           value: |-
-              Hey There! 👋 Thanks for reaching out to the CinePro Core community!
+              Hey There! 👋 Thanks for reaching out to the StarLight Core community!
 
               Please fill out this template to help us understand your question better.
 
               > [!TIP]
-              > For general discussions, consider using [GitHub Discussions](https://github.com/orgs/cinepro-org/discussions) instead!
+              > For general discussions, consider using [GitHub Discussions](https://github.com/MaheshSharan/star-core/discussions) instead!
 
     - type: checkboxes
       attributes:
           label: Prerequisites
           description: '**Please check these before submitting:**'
           options:
-              - label: I have read the [README.md](https://github.com/cinepro-org/core/blob/main/README.md)
+              - label: I have read the [README.md](https://github.com/MaheshSharan/star-core/blob/main/README.md)
                 required: true
               - label: I have checked the [OMSS Framework documentation](https://github.com/omss-spec/framework)
                 required: true
-              - label: I have checked [CinePro documentation](https://docs.cinepro.cc)
+              - label: I have checked [StarLight documentation](https://github.com/MaheshSharan/star-core)
                 required: true
               - label: I have searched existing issues and discussions for similar questions
                 required: true
@@ -39,7 +39,7 @@ body:
               - API Usage
               - Integration with CineHome
               - Performance & Optimization
-              - Contributing to CinePro
+              - Contributing to StarLight
               - Other
       validations:
           required: true

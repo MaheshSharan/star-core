@@ -211,6 +211,6 @@ export const knownThirdPartyProxies: Record<string, RegExp[]> = {
  *
  * Test your regex:       https://regex101.com/ (use JavaScript flavor)
  * URL encoding/decoding: encodeURIComponent() and decodeURIComponent() in any js runtime
- * Ask in discussions:    https://github.com/orgs/cinepro-org/discussions
+ * Ask in discussions:    https://github.com/MaheshSharan/star-core/discussions
  *
  */

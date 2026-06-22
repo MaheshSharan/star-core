@@ -1,14 +1,14 @@
-# Contributing to CinePro Core
+# Contributing to StarLight Core
 
-Hey there! 👋 Thanks for your interest in contributing to CinePro Core! We're excited to have you here.
+Hey there! 👋 Thanks for your interest in contributing to StarLight Core! We're excited to have you here.
 
 ## Getting Started
 
 Before contributing, please:
 
-1. Read the [README.md](https://github.com/cinepro-org/core/blob/main/README.md) to understand the project
+1. Read the [README.md](https://github.com/MaheshSharan/star-core/blob/main/README.md) to understand the project
 2. Familiarize yourself with the [OMSS Framework](https://github.com/omss-spec/framework) and [OMSS Specification](https://github.com/omss-spec/omss-spec), since the core relies heavily on these standards
-3. Check [existing issues](https://github.com/cinepro-org/core/issues) to see what's being worked on
+3. Check [existing issues](https://github.com/MaheshSharan/star-core/issues) to see what's being worked on
 4. Read our [Code of Conduct](CODE_OF_CONDUCT.md)
 
 ## How to Contribute
@@ -231,14 +231,14 @@ Documentation improvements are always welcome! This includes:
 
 ## Questions?
 
-- Check [CinePro Documentation](https://docs.cinepro.cc)
-- Ask in [GitHub Discussions](https://github.com/orgs/cinepro-org/discussions)
-- Open a [Question Issue](https://github.com/cinepro-org/core/issues/new/choose)
+- Check [StarLight Documentation](https://github.com/MaheshSharan/star-core)
+- Ask in [GitHub Discussions](https://github.com/MaheshSharan/star-core/discussions)
+- Open a [Question Issue](https://github.com/MaheshSharan/star-core/issues/new/choose)
 
 ## License
 
-By contributing to CinePro Core, you agree that your contributions will be licensed under the PolyForm Noncommercial 1.0 License.
+By contributing to StarLight Core, you agree that your contributions will be licensed under the PolyForm Noncommercial 1.0 License.
 
 ---
 
-**Thank you for contributing to CinePro Core! 🎬🚀**
+**Thank you for contributing to StarLight Core! 🎬🚀**

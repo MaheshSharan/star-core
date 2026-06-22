@@ -20,14 +20,14 @@ ARG CREATED
 ARG DESCRIPTION
 ARG SOURCE
 
-LABEL org.opencontainers.image.title="CinePro Core" \
+LABEL org.opencontainers.image.title="StarLight Core" \
       org.opencontainers.image.description="${DESCRIPTION}" \
       org.opencontainers.image.version="${VERSION}" \
       org.opencontainers.image.revision="${REVISION}" \
       org.opencontainers.image.created="${CREATED}" \
       org.opencontainers.image.source="${SOURCE}"
 
-LABEL org.opencontainers.image.description="CinePro Core is the central scraping and streaming engine of the CinePro ecosystem. It exposes an OMSS-compliant HTTP API for resolving movie and TV show streams from multiple providers."
+LABEL org.opencontainers.image.description="StarLight Core is the central scraping and streaming engine of the StarLight ecosystem. It exposes an OMSS-compliant HTTP API for resolving movie and TV show streams from multiple providers."
 
 ARG NODE_ENV=production
 ARG PORT=3000

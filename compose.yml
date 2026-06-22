@@ -1,5 +1,5 @@
 services:
-    cinepro-core:
+    starlight-core:
         build: .
         ports:
             - '3000:3000'
