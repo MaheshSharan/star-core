@@ -27,7 +27,7 @@ async function main() {
                 subtitles: 60 * 60 * 24
             },
             redis: {
-                host: process.env.REDIS_HOST,
+                host: process.env.REDIS_HOST!,
                 port: Number(process.env.REDIS_PORT),
                 password: process.env.REDIS_PASSWORD
             }
